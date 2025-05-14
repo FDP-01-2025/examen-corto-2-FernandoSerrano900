@@ -63,13 +63,12 @@ int main()
                         switch (userpurchase)
                         {
                         case 1:
-                            
 
                             discountstudent = 900 * 0.20;
                             productstudent = 900 - discountstudent;
                             walletTotal = wallet - productstudent;
 
-                            cout << "Gracias por su compra el saldo total en su cuenta es: " << walletTotal << endl;
+                            cout << "Gracias por su compra Laptop Basica el saldo total en su cuenta es: " << walletTotal << endl;
 
                             break;
                         case 2:
@@ -78,17 +77,16 @@ int main()
                             productstudent = 600 - discountstudent;
                             walletTotal = wallet - productstudent;
 
-                            cout << "Gracias por su compra el saldo total en su cuenta es: " << walletTotal << endl;
+                            cout << "Gracias por su compra Tablet Estudiantil el saldo total en su cuenta es: " << walletTotal << endl;
 
                             break;
                         case 3:
-                            
 
                             discountstudent = 700 * 0.20;
                             productstudent = 700 - discountstudent;
                             walletTotal = wallet - productstudent;
 
-                            cout << "Gracias por su compra el saldo total en su cuenta es: " << walletTotal << endl;
+                            cout << "Gracias por su compra Chromebook el saldo total en su cuenta es: " << walletTotal << endl;
 
                             break;
                         default:
@@ -113,7 +111,6 @@ int main()
                         switch (userpurchase)
                         {
                         case 1:
-                            
 
                             discountpro = 1500 * 0.20;
                             productpro = 1500 - discountpro;
@@ -125,12 +122,11 @@ int main()
                             }
                             else
                             {
-                                cout << "Gracias por su compra el saldo total en su cuenta es: " << walletTotal << endl;
+                                cout << "Gracias por su Laptop Avanzada compra el saldo total en su cuenta es: " << walletTotal << endl;
                             }
 
                             break;
                         case 2:
-                            
 
                             discountpro = 1200 * 0.20;
                             productpro = 1200 - discountpro;
@@ -142,18 +138,25 @@ int main()
                             }
                             else
                             {
-                                cout << "Gracias por su compra el saldo total en su cuenta es: " << walletTotal << endl;
+                                cout << "Gracias por su Tablet Pro compra el saldo total en su cuenta es: " << walletTotal << endl;
                             }
 
                             break;
                         case 3:
-                            
 
-                            discountpro = 700 * 0.20;
-                            productpro = 700 - discountpro;
+                            discountpro = 2000 * 0.20;
+                            productpro = 2000 - discountpro;
                             walletTotal = wallet - productpro;
 
-                            cout << "Gracias por su compra el saldo total en su cuenta es: " << walletTotal << endl;
+                            if (walletTotal < 1000)
+                            {
+                                cout << "No puede realizar la compra saldo insuficiente" << endl;
+                            }
+                            else
+                            {
+
+                                cout << "Gracias por su compra Estacion de trabajo el saldo total en su cuenta es: " << walletTotal << endl;
+                            }
 
                             break;
                         default:
@@ -161,7 +164,104 @@ int main()
                         }
                         break;
                     case 3:
-                        /* code */
+                        cout << "Seleccione el producto que desea comprar: " << endl;
+                        cout << "1 | Laptop Basica: $900" << endl;
+                        cout << "2 | Tablet Estudiantil: $600" << endl;
+                        cout << "3 | Chromebook: $700" << endl;
+                        cout << "4 | Laptop Avanzada: $1500" << endl;
+                        cout << "5 | Tablet Pro: $1200" << endl;
+                        cout << "6 | Estacion de trabajo: $2000" << endl;
+                        cin >> userpurchase;
+
+                        if (userpurchase > 6 || userpurchase < 1)
+                        {
+                            cout << "Ingrese un numero valido" << endl;
+                        }
+                        else
+                        {
+                            switch (userpurchase)
+                            {
+                            case 1:
+
+                                discountstudent = 900 * 0.20;
+                                productstudent = 900 - discountstudent;
+                                walletTotal = wallet - productstudent;
+
+                                cout << "Gracias por su compra de Laptop Basica el saldo total en su cuenta es: " << walletTotal << endl;
+
+                                break;
+                            case 2:
+
+                                discountstudent = 600 * 0.20;
+                                productstudent = 600 - discountstudent;
+                                walletTotal = wallet - productstudent;
+
+                                cout << "Gracias por su compra Tablet Estudiantil el saldo total en su cuenta es: " << walletTotal << endl;
+
+                                break;
+                            case 3:
+
+                                discountstudent = 700 * 0.20;
+                                productstudent = 700 - discountstudent;
+                                walletTotal = wallet - productstudent;
+
+                                cout << "Gracias por su compra Chromebook el saldo total en su cuenta es: " << walletTotal << endl;
+
+                                break;
+                            case 4:
+
+                                discountpro = 1500 * 0.20;
+                                productpro = 1500 - discountpro;
+                                walletTotal = wallet - productpro;
+
+                                if (walletTotal < 1000)
+                                {
+                                    cout << "No puede realizar la compra saldo insuficiente" << endl;
+                                }
+                                else
+                                {
+                                    cout << "Gracias por su compra Laptop Avanzada el saldo total en su cuenta es: " << walletTotal << endl;
+                                }
+
+                                break;
+                            case 5:
+
+                                discountpro = 1200 * 0.20;
+                                productpro = 1200 - discountpro;
+                                walletTotal = wallet - productpro;
+
+                                if (walletTotal < 1000)
+                                {
+                                    cout << "No puede realizar la compra saldo insuficiente" << endl;
+                                }
+                                else
+                                {
+                                    cout << "Gracias por su compra Tablet Pro el saldo total en su cuenta es: " << walletTotal << endl;
+                                }
+
+                                break;
+                            case 6:
+
+                                discountpro = 2000 * 0.20;
+                                productpro = 2000 - discountpro;
+                                walletTotal = wallet - productpro;
+
+                                if (walletTotal < 1000)
+                                {
+                                    cout << "No puede realizar la compra saldo insuficiente" << endl;
+                                }
+                                else
+                                {
+
+                                    cout << "Gracias por su compra Estacion de trabajo el saldo total en su cuenta es: " << walletTotal << endl;
+                                }
+
+                                break;
+                            default:
+                                break;
+                            }
+                        }
+
                         break;
 
                     default:
