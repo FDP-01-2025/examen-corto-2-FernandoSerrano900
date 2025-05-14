@@ -99,7 +99,7 @@ int main()
                     cout << "Seleccione el producto que desea comprar: " << endl;
                     cout << "1 | Laptop Avanzada: $1500" << endl;
                     cout << "2 | Tablet Pro: $1200" << endl;
-                    cout << "3 | Estacion de trabajo: $700" << endl;
+                    cout << "3 | Estacion de trabajo: $2000" << endl;
                     cin >> userpurchase;
 
                     if (userpurchase > 3 || userpurchase < 1)
@@ -112,13 +112,13 @@ int main()
                         {
                         case 1:
 
-                            discountpro = 1500 * 0.20;
+                            discountpro = 1500 * 0.10;
                             productpro = 1500 - discountpro;
                             walletTotal = wallet - productpro;
 
                             if (walletTotal < 1000)
                             {
-                                cout << "No puede realizar la compra saldo insuficiente" << endl;
+                                cout << "No puede realizar la compra saldo insuficiente, saldo que faltaria para completar la compra: " << walletTotal << endl;
                             }
                             else
                             {
@@ -128,13 +128,13 @@ int main()
                             break;
                         case 2:
 
-                            discountpro = 1200 * 0.20;
+                            discountpro = 1200 * 0.10;
                             productpro = 1200 - discountpro;
                             walletTotal = wallet - productpro;
 
                             if (walletTotal < 1000)
                             {
-                                cout << "No puede realizar la compra saldo insuficiente" << endl;
+                                cout << "No puede realizar la compra saldo insuficiente, saldo que faltaria para completar la compra: " << walletTotal << endl;
                             }
                             else
                             {
@@ -144,13 +144,13 @@ int main()
                             break;
                         case 3:
 
-                            discountpro = 2000 * 0.20;
+                            discountpro = 2000 * 0.10;
                             productpro = 2000 - discountpro;
                             walletTotal = wallet - productpro;
 
                             if (walletTotal < 1000)
                             {
-                                cout << "No puede realizar la compra saldo insuficiente" << endl;
+                                cout << "No puede realizar la compra saldo insuficiente, saldo que faltaria para completar la compra: " << walletTotal << endl;
                             }
                             else
                             {
@@ -210,13 +210,13 @@ int main()
                                 break;
                             case 4:
 
-                                discountpro = 1500 * 0.20;
+                                discountpro = 1500 * 0.10;
                                 productpro = 1500 - discountpro;
                                 walletTotal = wallet - productpro;
 
                                 if (walletTotal < 1000)
                                 {
-                                    cout << "No puede realizar la compra saldo insuficiente" << endl;
+                                    cout << "No puede realizar la compra saldo insuficiente, saldo que faltaria para completar la compra: " << walletTotal << endl;
                                 }
                                 else
                                 {
@@ -226,13 +226,13 @@ int main()
                                 break;
                             case 5:
 
-                                discountpro = 1200 * 0.20;
+                                discountpro = 1200 * 0.10;
                                 productpro = 1200 - discountpro;
                                 walletTotal = wallet - productpro;
 
                                 if (walletTotal < 1000)
                                 {
-                                    cout << "No puede realizar la compra saldo insuficiente" << endl;
+                                    cout << "No puede realizar la compra saldo insuficiente, saldo que faltaria para completar la compra: " << walletTotal << endl;
                                 }
                                 else
                                 {
@@ -242,13 +242,13 @@ int main()
                                 break;
                             case 6:
 
-                                discountpro = 2000 * 0.20;
+                                discountpro = 2000 * 0.10;
                                 productpro = 2000 - discountpro;
                                 walletTotal = wallet - productpro;
 
                                 if (walletTotal < 1000)
                                 {
-                                    cout << "No puede realizar la compra saldo insuficiente" << endl;
+                                    cout << "No puede realizar la compra saldo insuficiente, saldo que faltaria para completar la compra: " << walletTotal << endl;
                                 }
                                 else
                                 {
